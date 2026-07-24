@@ -6,7 +6,7 @@
 ##########################################################################
 
 # ---- Base image -------------------------------------------------------
-FROM node:20-alpine AS base
+FROM node:22-alpine AS base
 # libc6-compat helps some native deps run on Alpine
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
